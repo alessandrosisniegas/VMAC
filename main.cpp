@@ -43,7 +43,7 @@ void compareChanges(vector<string> &result1, vector<string> &result2, vector<vec
     for(int i = 0; i < result1.size(); i++){
         if(!findLine(result2, result1[i])){
             changed = true;
-            cout << "\tLine " << i + 1 << " /* " << result1[i] << " */n";
+            cout << "\tLine " << i + 1 << " /* " << result1[i] << " *\n";
         }
     }
 
@@ -51,7 +51,7 @@ void compareChanges(vector<string> &result1, vector<string> &result2, vector<vec
     for(int i = 0; i < result2.size(); i++){
         if(!findLine(result1, result2[i])){
             changed = true;
-            cout << "\tLine " << i + 1 << " /* " << result1[i] << " */n";
+            cout << "\tLine " << i + 1 << " /* " << result2[i] << " *\n";
         }
     }
     if(changed){
